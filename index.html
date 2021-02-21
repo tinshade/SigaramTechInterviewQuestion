@@ -63,6 +63,9 @@
         function handleChange(id){
             var fbox = document.getElementById('fbox');
             var sbox = document.getElementById('sbox');
+            if(id === fbox.innerHTML || id === sbox.innerHTML){
+                return;
+              }
 
             if(fbox.innerHTML === "none"){
                 fbox.innerHTML = id;
